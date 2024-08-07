@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+   
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10));
+    background-position: center;
+    background-size: center;
+    padding: 0%;
+    margin: 0%;
+}
+.navbar{
+    width: 90%;    
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+    margin-top: -10px;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    font-size:30px;
+}
+li a:hover{
+    background: white;
+    transition: 0.6s;
+}
+.navbar a:hover{
+    color: black;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+@keyframes slideIn{
+    0%{
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.content h1{
+    margin-top: 80px;
+    font-size: 150px;
+    font-weight: 800;
+    animation:slideIn 2s ease-in-out forwards ;
+}
+.content h3{
+    font-size: 90px;
+    animation:slideIn 2s ease-in-out forwards ;
+}
+.btn1{
+    width: 400px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn1:hover{
+    background: rgb(0, 192, 226);
+    transition: 0.5s;
+}
+.btn1:hover{
+    color: white;
+}
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.about{
+    background-image: url(image/11.jpg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+}
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.carousel-price {
+         color: #FF136F;
+}
+.carousel-inner {
+         background-color:transparent;
+}
+p{
+    color: black;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+   
+}
+.heading{
+text-align: center;
+font-size: 4rem;
+color: #333;
+padding: 1rem;
+margin: 2rem 0;
+}
+.fw-bold h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.abt{
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.box {
+    border: 5px solid #ffffff;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color:#7fddf3;
+   
+  }
+.box h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+.box img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #339af4dd;
+    padding: 20px;
+    border:5px solid white;
+}
+.footer-info {
+    text-align: center;
+} 
+.social-icons {
+    margin-top: 10px; 
+    text-align: center;
+}
+.social-icons a {
+    margin: 0 5px;
+}
